@@ -1,0 +1,34 @@
+1.	 var r=null;
+println(typeof r);
+println("hi");
+
+output:
+object
+hi
+
+2.	var a=[];
+a[0]=10;
+a[2]=11;
+println(a[1]);
+
+output:
+undefined
+
+
+3.	function doMe(){
+    a = "123";
+    var b = "321";
+    alert("a:"+a+"  --  b:"+b);
+    b = "something else";
+    alert("a:"+a+"  --  b:"+b);
+    
+};
+doMe()
+alert("a:"+a+"  --  b:"+b);
+
+
+output:
+Uncaught ReferenceError: b is not defined
+
+
+
